@@ -1,0 +1,20 @@
+read.table(file.choose())
+# 이렇게 하고 실행하면 파일을 선택할 수 있음
+
+# 먼저 txt 파일 불러오기. read.table
+data <- read.table(file.choose(), header = FALSE)
+# 헤더는 첫줄은 데이터가 아닌 제목임을 알림
+# 헤더가 있으면 True
+head(data)
+tail(data)
+
+# csv 파일 불러오기. read.csv
+data2 <- read.csv(file.choose(), header = FALSE)
+head(data2)
+tail(data2)
+
+# 전체구조 보기
+str(data2)
+
+# 특정 컬럼에서 가장 큰값 찾기
+max(data2&v2)
